@@ -14,7 +14,6 @@ public class PsdPegaController {
     @GetMapping("/getPsdData")
     public String getPsd2Data (@RequestParam String fkn, @RequestParam String pin) {
 
-        String responce =  psdService.getPSDinfo(fkn, pin);
-        return responce;
+        return psdService.getPSDinfo(fkn, pin);
     }
 }
